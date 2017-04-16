@@ -9,6 +9,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "better-scroll": "^0.1.15",
     "vue": "^2.1.0"
   },
   "devDependencies": {
