@@ -21,7 +21,6 @@
 </template>
 <script>
 	export default{
-		name: 'shopcart',
 		props: {
 			selectFoods: {
 				type: Array,
