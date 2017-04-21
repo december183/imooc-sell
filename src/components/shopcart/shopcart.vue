@@ -365,7 +365,7 @@
 						color: rgb(7, 17, 27)
 					.price
 						position: absolute
-						right: 90px
+						right: 100px
 						bottom: 12px
 						line-height: 24px
 						font-size: 14px
