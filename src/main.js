@@ -29,4 +29,4 @@ new Vue({
 	render: h => h(App)
 });
 
-router.push('/goods');
+// router.push('/goods');
