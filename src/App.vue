@@ -19,19 +19,26 @@
 </template>
 
 <script>
+  import {urlParse} from 'common/js/util';
   import header from 'components/header/header';
   const ERR_OK = 0;
   export default{
     data(){
       return {
-        seller:{}
+        seller:{
+          id: (() => {
+            let queryParam = urlParse();
+            return queryParam.id;
+          })()
+        }
       }
     },
     created(){
       this.$http.get('api/seller').then((response) => {
         var res=response.body;
         if(res.errno === ERR_OK){
-          this.seller=res.data;
+          // this.seller=res.data;
+          this.seller = Object.assign({}, this.seller, res.data);
         }
       });
     },
